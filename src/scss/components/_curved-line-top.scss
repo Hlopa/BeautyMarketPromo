@@ -1,0 +1,16 @@
+.curved-line-top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 188px;
+  background: url('../img/curved-line-top.svg') center bottom no-repeat;
+  pointer-events: none;
+  user-select: none;
+
+  @include media-breakpoint-down(sm) {
+    top: -1px;
+    background-image: url('../img/curved-line-top-mobile.svg');
+    height: 250px;
+  }
+}

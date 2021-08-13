@@ -1,0 +1,131 @@
+.footer {
+  padding-top: 30px;
+  padding-bottom: 33px;
+  background: #19191B;
+
+  &__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    grid-column-gap: 70px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include media-breakpoint-down(md) {
+      grid-column-gap: 20px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-wrap: wrap;
+    }
+
+    @include media-breakpoint-down(xs) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .logo {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      max-width: 184px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: row;
+      width: calc(100% - 150px);
+      margin-bottom: 20px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    &-item {
+      margin-bottom: 18px;
+      font-weight: 600;
+      font-size: 18px;
+      text-decoration: none;
+      color: #fff;
+      transition: color 200ms linear;
+
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 0;
+        margin-right: 15px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      @include media-breakpoint-down(xs) {
+        margin-right: 0;
+        margin-bottom: 18px;
+        text-align: center;
+      }
+
+      &:hover {
+        color: $color-main;
+      }
+    }
+  }
+
+  &__documents {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    margin-bottom: 18px;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: underline;
+    color: rgba(#fff, 0.5);
+    transition: color 200ms linear;
+
+    @include media-breakpoint-down(xs) {
+      text-align: center;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__info {
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(#fff, 0.5);
+    line-height: 2;
+    transform: translateY(-6px);
+
+    @include media-breakpoint-down(xs) {
+      text-align: center;
+    }
+  }
+
+  &__copyright {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding-top: 30px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    border-top: 1px solid #434343;
+  }
+}

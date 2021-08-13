@@ -1,0 +1,51 @@
+.number-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: number-list-counter;
+
+  &__item {
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 1.2;
+    counter-increment: number-list-counter;
+
+    &:before {
+      content: counter(number-list-counter);
+      position: absolute;
+      top: 10px;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 23px;
+      height: 23px;
+      background: $color-main;
+      border-radius: 50%;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    &-title {
+      margin-bottom: 20px;
+      font-family: $font-family-secondary;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+
+  &--theme {
+    &-yellow {
+      .number-list__item {
+        &:before {
+          background: $color-yellow;
+          color: $color-text;
+        }
+      }
+    }
+  }
+}

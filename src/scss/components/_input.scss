@@ -1,0 +1,85 @@
+.input {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+
+  input, select, textarea {
+    display: block;
+    width: 100%;
+    height: 71px;
+    // padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+    border: 0;
+    box-shadow: none !important;
+    background: #F6F9FC;
+    border-radius: 6px;
+    appearance: none;
+
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+
+  &--small {
+    input, select, textarea {
+      padding-top: 11px;
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+
+  &--gray {
+    input, select, textarea {
+      background: #F6F9FC;
+      color: rgba($color-text, 0.7);
+    }
+  }
+
+  &--with-range {
+    position: relative;
+
+    input[type="range"] {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 2px;
+    padding-left: 0;
+    padding-right: 0;
+    background: #874CFA;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      background: #874CFA;
+      box-shadow: 0px 4px 4px rgba(65, 62, 101, 0.25);
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    &::-moz-range-thumb {
+      width: 16px;
+      height: 16px;
+      background: #874CFA;
+      box-shadow: 0px 4px 4px rgba(65, 62, 101, 0.25);
+      cursor: pointer;
+      border-radius: 50%;
+    }
+  }
+}

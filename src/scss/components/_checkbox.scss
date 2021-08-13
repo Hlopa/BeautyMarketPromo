@@ -1,0 +1,47 @@
+.checkbox {
+  cursor: pointer;
+
+  input {
+    display: none;
+
+    &:checked + .checkbox__mark:after {
+      opacity: 1;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &__mark {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    background: #F6F9FC;
+    border-radius: 6px;
+    vertical-align: middle;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 0;
+      height: 0;
+      transform: translate(-50%, -50%);
+      border-radius: 4px;
+      background: $color-main;
+      opacity: 0;
+      transition: width 120ms ease-in-out,
+        height 120ms ease-in-out,
+        opacity 120ms ease-in-out;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    font-size: 18px;
+    color: rgba($color-text, 0.7);
+    vertical-align: middle;
+  }
+}

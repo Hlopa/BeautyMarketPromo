@@ -1,0 +1,22 @@
+.card {
+  padding: 45px 32px;
+  background: #fff;
+  border-radius: 10px;
+
+  @include media-breakpoint-down(lg) {
+    padding: 40px ​25px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding: 14px 20px;
+    padding-bottom: 20px;
+  }
+
+  .round-icon {
+    margin-bottom: 38px;
+
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 24px;
+    }
+  }
+}

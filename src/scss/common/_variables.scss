@@ -1,0 +1,40 @@
+// Paths
+$path-fonts: "/src/fonts/";
+$path-images: "/src/img/";
+
+
+// Font
+$font-family-primary: "Segoe UI";
+$font-family-secondary: "Circe";
+
+$font-family: $font-family-primary;
+
+// Colors
+$color-blue: #4F8FC9;
+$color-blue-light: #EDF6FD;
+$color-green: #58C78B;
+$color-red: #C75858;
+$color-gray: #CDD3D8;
+$color-yellow: #FEDC5A;
+
+$color-text: #070918;
+$color-text-light: #696871;
+$color-main: #874CFA;
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+	xl: 1360px
+) !default;
+
+// Настройки контейнера
+// prettier-ignore
+$max-widths: (
+	xs: 100%,
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+	xl: 1330px
+) !default;

@@ -1,0 +1,125 @@
+.stock {
+  position: relative;
+  padding-top: 267px;
+  padding-bottom: 244px;
+  background: #F7F7FB;
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 155px;
+    padding-bottom: 120px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-bottom: 80px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 120px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding-top: 40px;
+  }
+
+  .block-title {
+    font-size: 46px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 38px;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 30px;
+    }
+  }
+
+  &__content-wrapper {
+    width: 100%;
+    max-width: 554px;
+    margin-left: 635px;
+
+    @include media-breakpoint-down(lg) {
+      margin-left: 470px;
+      width: auto;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-left: 335px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+      width: 100%;
+      max-width: none;
+    }
+
+    @include media-breakpoint-down(xs) {
+      position: relative;
+    }
+  }
+
+  &__photo-card {
+    position: absolute;
+    left: calc(50% - 534px);
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      max-width: 300px;
+      left: calc(50% - 350px);
+    }
+
+    @include media-breakpoint-down(md) {
+      left: calc(50% - 343px);
+    }
+
+    @include media-breakpoint-down(sm) {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      margin-top: 55px;
+      max-width: 350px;
+      margin-left: 45px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      max-width: 277px;
+    }
+
+    &:before {
+      left: -32px;
+    }
+
+    .mark {
+      position: absolute;
+      left: -115px;
+      top: 197px;
+      width: 305px;
+
+      @include media-breakpoint-down(md) {
+        left: -36px;
+        top: 220px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        left: -45px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        width: 229px;
+      }
+    }
+  }
+
+  .number-list {
+    .number-list__item {
+      &:nth-child(2) {
+        &:before {
+          top: 0;
+        }
+      }
+    }
+  }
+}

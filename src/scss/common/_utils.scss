@@ -1,0 +1,116 @@
+.f-weight-100 {
+  font-weight: 100;
+}
+
+.f-weight-200 {
+  font-weight: 200;
+}
+
+.f-weight-300 {
+  font-weight: 300;
+}
+
+.f-weight-400 {
+  font-weight: 400;
+}
+
+.f-weight-500 {
+  font-weight: 500;
+}
+
+.f-weight-600 {
+  font-weight: 600;
+}
+
+.f-weight-700 {
+  font-weight: 700;
+}
+
+.f-weight-800 {
+  font-weight: 800;
+}
+
+.f-weight-900 {
+  font-weight: 900;
+}
+
+.f-style-italic {
+  font-style: italic;
+}
+
+.f-style-normal {
+  font-style: normal;
+}
+
+
+.c-primary {
+  color: $color-main;
+}
+
+.c-text {
+  color: $color-text;
+}
+
+.c-text-light {
+  color: $color-text-light;
+}
+
+.c-white {
+  color: #fff;
+}
+
+.c-red {
+  color: #ff0000;
+}
+
+.c-yellow {
+  color: $color-yellow;
+}
+
+.note {
+  margin-top: 20px;
+  opacity: 0.7;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.navbar-opened {
+  overflow: hidden !important;
+  height: 100%;
+}
+
+.root {
+  overflow: hidden;
+}
+
+// @keyframes marquee {
+//   0% {
+//       transform: translate3d(0%, 0, 0);
+//   }
+
+//   100% {
+//       transform: translate3d(-100%, 0, 0);
+//   }
+// }
+
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  50% {
+    left: -10796px;
+  }
+  100% {
+    left: -10796px;
+  }
+}

@@ -1,0 +1,43 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  overflow-y: auto;
+  z-index: 9000;
+
+  &--shown {
+    display: flex;
+  }
+
+  &__panel {
+    width: 100%;
+    max-width: 450px;
+    padding: 35px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  &-backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($color-text, 0.8);
+    z-index: 10;
+    display: none;
+  }
+
+  &-opened {
+    overflow: hidden;
+
+    .modal-backdrop {
+      display: block;
+    }
+  }
+}

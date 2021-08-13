@@ -1,0 +1,11 @@
+.link {
+  display: inline-block;
+  text-decoration: underline;
+  color: rgba($color-main, 0.7);
+  transition: color 150ms linear;
+
+  &:hover {
+    color: $color-main;
+    text-decoration: none;
+  }
+}

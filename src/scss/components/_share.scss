@@ -1,0 +1,95 @@
+.share {
+  position: relative;
+  padding-top: 160px;
+  padding-bottom: 212px;
+  z-index: 1;
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-top: 30px;
+    padding-bottom: 100px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding-top: 0;
+    padding-bottom: 70px;
+  }
+
+  .block-title {
+    width: 100%;
+    max-width: 645px;
+  }
+
+  .number-list {
+    width: 100%;
+    max-width: 475px;
+  }
+
+  &__content-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+
+    @include media-breakpoint-down(lg) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      max-width: 385px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      max-width: none;
+    }
+  }
+
+  &__photo-card {
+    position: absolute;
+    left: calc(50% + 156px);
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      max-width: 285px;
+      left: calc(50% + 80px);
+    }
+
+    @include media-breakpoint-down(sm) {
+      position: relative;
+      left: auto;
+      top: auto;
+      transform: none;
+      margin-left: 45px;
+      margin-top: 55px;
+      max-width: 267px;
+    }
+
+    @media (max-width: 374px) {
+      max-width: 236px;
+    }
+
+    .mark {
+      position: absolute;
+      left: -115px;
+      bottom: 113px;
+      width: 318px;
+
+      @include media-breakpoint-down(md) {
+        left: -25px;
+        bottom: 60px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        width: 223px;
+        left: -45px;
+        bottom: 75px;
+      }
+    }
+  }
+}
