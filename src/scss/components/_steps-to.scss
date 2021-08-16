@@ -1,7 +1,7 @@
 .steps-to {
   position: relative;
-  padding-top: 130px;
-  padding-bottom: 160px;
+  padding-top: 80px;
+  padding-bottom: 93px;
   background: #672DD8;
   overflow: hidden;
 
@@ -45,12 +45,8 @@
       }
 
       @include media-breakpoint-down(md) {
-        width: 65%;
-        margin-bottom: 30px;
-      }
-
-      @include media-breakpoint-down(sm) {
         width: 100%;
+        margin-bottom: 30px;
       }
     }
   }
@@ -71,10 +67,8 @@
       object-fit: contain;
     }
 
-    @include media-breakpoint-down(xs) {
-      transform: rotate(-9deg) translateY(20px);
-      max-width: 148px;
-      box-shadow: 18.2602px 25.5643px 51.1286px rgba(30, 52, 92, 0.157998);
+    @include media-breakpoint-down(md) {
+      display: none;
     }
   }
 

@@ -8,6 +8,12 @@
     padding-bottom: 160px;
   }
 
+
+  @include media-breakpoint-down(md) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   @include media-breakpoint-down(xs) {
     padding-top: 100px;
     padding-bottom: 50px;
@@ -60,6 +66,7 @@
     @include media-breakpoint-down(lg) {
       width: 100%;
       max-width: 380px;
+      bottom: 19px;
     }
 
     @include media-breakpoint-down(sm) {
@@ -85,7 +92,11 @@
       &:first-child {
         display: block;
 
-        @include media-breakpoint-down(xs) {
+        @include media-breakpoint-down(lg) {
+          max-width: 75%;
+        }
+
+        @include media-breakpoint-down(md) {
           display: none;
         }
       }
