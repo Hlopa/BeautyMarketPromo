@@ -26,6 +26,7 @@
   .curved-line-top {
     transform: scale(-1, 1);
     z-index: 10;
+    top: -2px;
   }
 
   &__circle-decoration {
@@ -42,6 +43,9 @@
     width: 100%;
     max-width: 530px;
     margin-left: 55px;
+    position: relative;
+    z-index: 10;
+
 
     @include media-breakpoint-down(sm) {
       margin-left: 0;
@@ -61,6 +65,7 @@
 
   &__platform {
     position: absolute;
+    z-index: 1;
     left: calc(50% + 50px);
     top: 130px;
     pointer-events: none;

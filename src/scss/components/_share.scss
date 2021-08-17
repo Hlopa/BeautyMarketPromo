@@ -4,14 +4,40 @@
   padding-bottom: 212px;
   z-index: 1;
 
+  .share__inner{
+    display: flex;
+    justify-content: space-around;
+
+    @include media-breakpoint-down(md) {
+     flex-wrap: wrap;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-top: 50px;
+     }
+  }
+
+  .left{
+    width:48%;
+    @include media-breakpoint-down(md) {
+     width: 100%;
+     }
+  }
+
+  .right{
+    width: 40%;
+    @include media-breakpoint-down(sm) {
+      width: 80%;
+      padding-top: 20px;
+      }
+  }
+
   @include media-breakpoint-down(lg) {
-    padding-top: 100px;
     padding-bottom: 120px;
   }
 
   @include media-breakpoint-down(md) {
-    padding-top: 30px;
-    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 30px;
   }
 
   @include media-breakpoint-down(xs) {
@@ -49,35 +75,42 @@
   }
 
   &__photo-card {
-    position: absolute;
-    left: calc(50% + 156px);
-    top: 50%;
-    transform: translateY(-50%);
+    // position: absolute;
+    // left: calc(50% + 156px);
+    // top: 50%;
+    // transform: translateY(-50%);
+
+    // height: 600px;
+
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
 
     @include media-breakpoint-down(md) {
-      width: 100%;
-      max-width: 285px;
-      left: calc(50% + 80px);
+      // width: 100%;
+      // max-width: 285px;
+      // left: calc(50% + 80px);
     }
 
     @include media-breakpoint-down(sm) {
-      position: relative;
-      left: auto;
-      top: auto;
-      transform: none;
-      margin-left: 45px;
-      margin-top: 55px;
-      max-width: 267px;
+      // position: relative;
+      // left: auto;
+      // top: auto;
+      // transform: none;
+      // margin-left: 45px;
+      // margin-top: 55px;
+      // max-width: 267px;
     }
 
     @media (max-width: 374px) {
-      max-width: 236px;
+      // max-width: 236px;
     }
 
     .mark {
       position: absolute;
-      left: -115px;
-      bottom: 113px;
+      left: -62px;
+      bottom: 7px;
       width: 318px;
 
       @include media-breakpoint-down(md) {

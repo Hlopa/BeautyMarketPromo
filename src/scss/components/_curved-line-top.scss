@@ -13,4 +13,8 @@
     background-image: url('../img/curved-line-top-mobile.svg');
     height: 250px;
   }
+
+  @include media-breakpoint-down(xs) {
+    display: none;
+  }
 }
