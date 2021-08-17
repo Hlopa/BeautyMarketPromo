@@ -1,26 +1,31 @@
 .roadmap {
   position: relative;
-  padding-top: 210px;
+  padding-top: 100px;
   padding-bottom: 128px;
 
+  @include media-breakpoint-down(lg) {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
   @include media-breakpoint-down(sm) {
-    padding-top: 30px;
     padding-bottom: 60px;
   }
 
   &__intro {
     position: relative;
-
+    
     .block-title {
       width: 100%;
       max-width: 470px;
       margin-left: 67px;
-      margin-bottom: 160px;
+      margin-bottom: 100px;
       line-height: 1.2;
 
       @include media-breakpoint-down(lg) {
-        margin-bottom: 220px;
+        margin-bottom: 60px;
       }
+
 
       @include media-breakpoint-down(md) {
         max-width: 290px;
@@ -41,6 +46,7 @@
     }
 
     &-platform {
+      display: none;
       position: absolute;
       left: calc(50% + 74px);
       top: 50%;

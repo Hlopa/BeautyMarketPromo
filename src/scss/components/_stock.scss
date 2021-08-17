@@ -18,7 +18,7 @@
   }
 
   @include media-breakpoint-down(xs) {
-    padding-top: 40px;
+    padding-top: 80px;
   }
 
   .block-title {
@@ -76,20 +76,24 @@
 
     @include media-breakpoint-down(sm) {
       position: relative;
-      top: auto;
-      left: auto;
+      top: unset;
+      left: unset;
       transform: none;
+      margin: 0px auto;
       margin-top: 55px;
       max-width: 350px;
-      margin-left: 45px;
     }
 
     @include media-breakpoint-down(xs) {
       max-width: 277px;
+      left: 19px;
     }
 
     &:before {
       left: -32px;
+      @include media-breakpoint-down(xs) {
+        display: none;
+      }
     }
 
     .mark {

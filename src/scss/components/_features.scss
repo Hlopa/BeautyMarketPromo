@@ -38,7 +38,7 @@
 
   &__photo-card {
     position: absolute;
-    left: calc(50% + 177px);
+    left: calc(43% + 177px);
     top: 50%;
     transform: translateY(-50%);
 
@@ -50,9 +50,10 @@
 
     @include media-breakpoint-down(sm) {
       position: relative;
-      left: auto;
-      top: auto;
+      left: unset;
+      top: unset;
       transform: none;
+      margin: 0px auto;
       margin-top: 45px;
       max-width: 370px;
     }
