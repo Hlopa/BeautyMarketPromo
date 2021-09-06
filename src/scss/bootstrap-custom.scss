@@ -23,6 +23,7 @@ $container-max-widths: ();
 
 
 .modal {
+  padding-left: 16px;
   .modal-dialog {
     max-width: 1033px;
 
@@ -31,7 +32,7 @@ $container-max-widths: ();
     }
 
     @include media-breakpoint-down(md) {
-      max-width: 365px;
+      max-width: 600px;
     }
 
     @include media-breakpoint-down(xs) {
@@ -156,7 +157,6 @@ $container-max-widths: ();
 #modal-calculator {
   .modal-desc {
     width: 100%;
-    max-width: 390px;
   }
 }
 

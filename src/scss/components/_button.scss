@@ -16,6 +16,11 @@
   cursor: pointer;
   text-decoration: none;
 
+  @include media-breakpoint-down(xs){
+    margin: 0px auto;
+    display: flex;
+  }
+
   &--main {
     background: $color-main;
     color: #fff;
